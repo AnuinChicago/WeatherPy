@@ -1,6 +1,6 @@
-# Python API Homework - What's the Weather Like?
+# What's the Weather Like?
 
-##Background
+## Background
 Whether financial, political, or social -- data's true power lies in its ability to answer questions definitively. So let's take what you've learned about Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
 Now, we know what you may be thinking: "Duh. It gets hotter..."
 But, if pressed, how would you prove it?
@@ -8,7 +8,7 @@ But, if pressed, how would you prove it?
 
 
 
-##Part I - WeatherPy
+## Part I - WeatherPy
 In this example, you'll be creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, you'll be utilizing a simple Python library, the OpenWeatherMap API, and a little common sense to create a representative model of weather across world cities.
 Your first requirement is to create a series of scatter plots to showcase the following relationships:
 
@@ -39,7 +39,7 @@ Include a print log of each city as it's being processed with the city number an
 Save a CSV of all retrieved data and a PNG image for each scatter plot.
 
 
-##Part II - VacationPy
+## Part II - VacationPy
 Now let's use your skills in working with weather data to plan future vacations. Use jupyter-gmaps and the Google Places API for this part of the assignment.
 
 
@@ -78,7 +78,7 @@ Plot the hotels on top of the humidity heatmap with each pin containing the Hote
 
 
 
-##Analysis
+## Analysis
 WeatherPy
 1. There is very good corelation between temperature and the lalitude. We see in both hemispheres, that as we go closer to the equator the temperature increases.
 2. There is no corelation between humididity or cloudiness and lalitude in both the hemispheres.
