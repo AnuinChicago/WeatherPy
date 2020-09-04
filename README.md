@@ -8,36 +8,33 @@ But, if pressed, how would you prove it?
 
 
 
-## Part I - WeatherPy
-In this example, you'll be creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, you'll be utilizing a simple Python library, the OpenWeatherMap API, and a little common sense to create a representative model of weather across world cities.
-Your first requirement is to create a series of scatter plots to showcase the following relationships:
+##  WeatherPy
+WeatherPy
+The objective is to write a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator using CityPy, a simple Python library, and the OpenWeatherMap API.
 
-Temperature (F) vs. Latitude
-Humidity (%) vs. Latitude
-Cloudiness (%) vs. Latitude
-Wind Speed (mph) vs. Latitude
+The visualizations includce a series of scatter plots to showcase the following relationships:
 
-After each plot add a sentence or too explaining what the code is and analyzing.
-Your second requirement is to run linear regression on each relationship, only this time separating them into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
+Temperature (F) vs. Latitude Humidity (%) vs. Latitude Cloudiness (%) vs. Latitude Wind Speed (mph) vs. Latitude
 
-Northern Hemisphere - Temperature (F) vs. Latitude
-Southern Hemisphere - Temperature (F) vs. Latitude
-Northern Hemisphere - Humidity (%) vs. Latitude
-Southern Hemisphere - Humidity (%) vs. Latitude
-Northern Hemisphere - Cloudiness (%) vs. Latitude
-Southern Hemisphere - Cloudiness (%) vs. Latitude
-Northern Hemisphere - Wind Speed (mph) vs. Latitude
-Southern Hemisphere - Wind Speed (mph) vs. Latitude
+The script accomplishes the following:
 
-After each pair of plots explain what the linear regression is modeling such as any relationships you notice and any other analysis you may have.
-Optional You will be creating multiple linear regression plots. To optimize your code, write a function that creates the linear regression plots.
-Your final notebook must:
+Randomly selects at least 500 unique (non-repeat) cities based on latitude and longitude.
 
-Randomly select at least 500 unique (non-repeat) cities based on latitude and longitude.
-Perform a weather check on each of the cities using a series of successive API calls.
-Include a print log of each city as it's being processed with the city number and city name.
-Save a CSV of all retrieved data and a PNG image for each scatter plot.
+Performs a weather check on each of the cities using a series of successive API calls.
 
+Includes a print log of each city as it's being processed with the city number and city name.
+
+Saves both a CSV of all data retrieved and png images for each scatter plot.
+
+## Observable Trends
+As expected, there is a strong correlation between the latitude and the max temperature values. The weather tends to get hotter as we approach equator. However, the maximum temperature is not exactly at the equator but slightly above (approx. 20o – 25o) the equator.
+![we](weather1.png)
+
+![we](weather2.png)
+
+![we](weather3.png)
+
+![we](weather4.png)
 
 ## Part II - VacationPy
 Now let's use your skills in working with weather data to plan future vacations. Use jupyter-gmaps and the Google Places API for this part of the assignment.
