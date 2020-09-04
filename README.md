@@ -27,13 +27,13 @@ Includes a print log of each city as it's being processed with the city number a
 Saves both a CSV of all data retrieved and png images for each scatter plot.
 
 ## Observable Trends
-As expected, there is a strong correlation between the latitude and the max temperature values. The weather tends to get hotter as we approach equator. However, the maximum temperature is not exactly at the equator but slightly above (approx. 20o – 25o) the equator.
+1.As expected, there is a strong correlation between the latitude and the max temperature values. The weather tends to get hotter as we approach equator. However, the maximum temperature is not exactly at the equator but slightly above (approx. 20o – 25o) the equator.
 ![we](weather1.png)
-
+2.The humidity and cloudiness do not seem to be correlated with latitude. The values are spread from minimum to maximum across latitude.
 ![we](weather2.png)
 
 ![we](weather3.png)
-
+3.The wind speed value is also not correlated to the latitude. And most of the cities seem to have wind speed values below 6 mph.
 ![we](weather4.png)
 
 ## Part II - VacationPy
